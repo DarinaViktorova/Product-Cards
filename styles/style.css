@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+    font-family: "Nunito";
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+
+  .product {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    font-family: inherit;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .add-to-cart {
+    position: relative;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-bottom: 40px;
+  }
+
+  .product:hover {
+    transform: translateY(-10px);
+  }
+
+  .close-icon-container {
+    margin-left: 10px;
+  }
+
+  .close-icon {
+    width: 20px;
+    height: -20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .close-icon:hover {
+    transform: scale(1.2);
+  }

@@ -1,0 +1,6 @@
+/* RadixUI styles for Samsung Phone */
+.samsung {
+  --rui-card-shadow: none;
+  --rui-card-border-radius: 8px;
+  --rui-card-padding: 20px;
+}

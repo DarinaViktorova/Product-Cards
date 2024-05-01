@@ -1,0 +1,10 @@
+/* Additional info styles */
+.additional-info {
+    display: none;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.product:hover .additional-info {
+    display: block;
+}

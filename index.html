@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Cards</title>
+    <link rel="stylesheet" href="https://unpkg.com/radix-ui/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/shadcn/dist/index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/samsung.css"/>
+    <link rel="stylesheet" href="./styles/iphone.css">
+    <link rel="stylesheet" href="./styles/info.css">
+    <link rel="stylesheet" href="./styles/cart.css">
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="product samsung">
+        <img src="./images/samsung.webp" alt="Samsung Phone" />
+        <h3>Samsung Galaxy S24 Ultra</h3>
+        <p>$1 499</p>
+        <div class="additional-info">
+          <p>Color: Titanium Violet</p>
+          <p>Capacity: 1TB</p>
+          <p>Cheap: Snapdragon 8 Gen 3 for Galaxy</p>
+        </div>
+        <div class="product-controls">
+          <button
+            class="add-to-cart"
+            onmouseenter="moveCartCenter(this)"
+            onmouseleave="leaveCartCenter(this)"
+            onclick="moveCartRight(this)"
+          >
+            Add to Cart
+          </button>
+          <div class="close-icon-container">
+            <img
+              src="./images/close.png"
+              alt="Close"
+              class="close-icon"
+              onclick="decrementCartCount(event, this.closest('.product'))"
+            />
+          </div>
+        </div>
+        <div class="cart">
+          &#x1F6D2;
+          <div class="cart-circle">0</div>
+        </div>
+        <!-- Cart element for Samsung -->
+      </div>
+
+      <div class="product iphone">
+        <img src="./images/iphone.jpg" alt="iPhone" />
+        <h3>iPhone 15 Pro Max</h3>
+        <p>$1 499</p>
+        <div class="additional-info">
+          <p>Color: Natural Titanium</p>
+          <p>Capacity: 1TB</p>
+          <p>Cheap: Apple A17 Pro</p>
+        </div>
+        <div class="product-controls">
+          <button
+            class="add-to-cart"
+            onmouseenter="moveCartCenter(this)"
+            onmouseleave="leaveCartCenter(this)"
+            onclick="moveCartRight(this)"
+          >
+            Add to Cart
+          </button>
+          <div class="close-icon-container">
+            <img
+              src="./images/close.png"
+              alt="Close"
+              class="close-icon"
+              onclick="decrementCartCount(event, this.closest('.product'))"
+            />
+          </div>
+        </div>
+        <div class="cart">
+          &#x1F6D2;
+          <div class="cart-circle">0</div>
+        </div>
+        <!-- Cart element for Iphone-->
+      </div>
+    </div>
+
+    <script src="./js/product-interactions.js"></script>
+    <script src="./js/cart-interactions.js"></script>
+  </body>
+</html>
